@@ -15,7 +15,7 @@ import { products, type Product, type ProductGlyph } from "./data/products";
 
 const navigation = [
   { label: "The studio", href: "#studio" },
-  { label: "Our products", href: "#products" },
+  { label: "Our kit", href: "#kit" },
   { label: "How we think", href: "#approach" },
 ];
 
@@ -110,7 +110,14 @@ function ProductArtwork({ glyph, accent }: { glyph: ProductGlyph; accent: string
   );
 }
 
+function productInquiryHref(product: Product) {
+  const subject = encodeURIComponent(`Tell me more about "${product.name}"`);
+  return `mailto:hello@kitbaglabs.com?subject=${subject}`;
+}
+
 function ProductCard({ product }: { product: Product }) {
+  const href = product.href ?? productInquiryHref(product);
+
   return (
     <article className={`product-card grid min-h-[220px] grid-cols-[7%_minmax(0,1fr)_minmax(220px,31%)] items-center gap-6 border-b border-white/20 py-[27px] max-[1024px]:grid-cols-[6%_minmax(0,1fr)_minmax(180px,30%)] max-[1024px]:gap-4 max-[700px]:grid-cols-[34px_1fr] max-[700px]:gap-[11px] max-[700px]:py-[23px]${product.status ? " product-card--upcoming" : ""}`}>
       <div className="product-card__number"><span>{product.number}</span><span className="product-card__dash" /></div>
@@ -121,12 +128,12 @@ function ProductCard({ product }: { product: Product }) {
             <h3>{product.name}<span className="product-card__period">.</span></h3>
             <p className="product-card__domain">{product.domain ?? product.status}</p>
           </div>
-          <a className="product-card__arrow" href={product.href ?? "#contact"} target={product.href ? "_blank" : undefined} rel={product.href ? "noreferrer" : undefined} aria-label={product.href ? `Explore ${product.name} (opens in a new tab)` : `Ask about ${product.name}`}>
+          <a className="product-card__arrow" href={href} target={product.href ? "_blank" : undefined} rel={product.href ? "noreferrer" : undefined} aria-label={product.href ? `Explore ${product.name} (opens in a new tab)` : `Ask about ${product.name}`}>
             <ArrowUpRight size={20} strokeWidth={1.8} />
           </a>
         </div>
         <p className="product-card__description">{product.description}</p>
-        <div className="product-card__foot"><span>{product.note}</span><a href={product.href ?? "#contact"} target={product.href ? "_blank" : undefined} rel={product.href ? "noreferrer" : undefined}>{product.href ? "Explore product" : "Ask about Maphoist"} <ArrowRight size={15} /></a></div>
+        <div className="product-card__foot"><span>{product.note}</span><a href={href} target={product.href ? "_blank" : undefined} rel={product.href ? "noreferrer" : undefined}>{product.href ? "Explore product" : `Ask about ${product.name}`} <ArrowRight size={15} /></a></div>
       </div>
       <div className="product-card__art max-[700px]:col-start-2"><ProductArtwork glyph={product.glyph} accent={product.accent} /></div>
     </article>
@@ -167,11 +174,11 @@ function App() {
       <main id="main">
         <section className={`hero ${sectionShell} grid grid-cols-[1.02fr_.98fr] items-center max-[1024px]:grid-cols-[1fr_.82fr] max-[700px]:flex max-[700px]:flex-col max-[700px]:items-stretch`} aria-labelledby="hero-title">
           <div className="hero-copy">
-            <div className="eyebrow hero-eyebrow"><span className="pulse-dot" /> SMALL FRICTIONS. SIMPLE SOLUTIONS.</div>
+            <div className="eyebrow hero-eyebrow"><span className="pulse-dot" /> DAILY FRICTIONS. SIMPLE SOLUTIONS.</div>
             <h1 id="hero-title">A little less<br /><span>“I wish this</span><br /><span>were easier.”</span></h1>
-            <p className="hero-lede">We build the focused software that makes everyday work—and everyday life—run a little smoother.</p>
+            <p className="hero-lede">We develop solutions that make everyday work, and everyday life, run a little smoother.</p>
             <div className="hero-actions">
-              <a className="button button--primary" href="#products">Explore our solutions <ArrowRight size={17} /></a>
+              <a className="button button--primary" href="#kit">Explore our solutions <ArrowRight size={17} /></a>
             </div>
           </div>
           <div className="hero-visual"><RouteMap /></div>
@@ -182,7 +189,6 @@ function App() {
           <div className="studio-layout mx-[5.2%] mt-[76px] grid grid-cols-[1.04fr_.96fr] gap-[11%] max-[1024px]:mx-0 max-[1024px]:gap-[7%] max-[700px]:mt-12 max-[700px]:grid-cols-1">
             <div className="studio-heading">
               <h2 id="studio-title">We look for the<br />small things that<br /><em>slow us down.</em></h2>
-              <span className="hand-note"><span className="hand-note__arrow">↘</span> That’s where better tools begin.</span>
             </div>
             <div className="studio-copy">
               <p className="studio-copy__lead">Kitbag Labs is a modern venture studio for practical ideas with a job to do.</p>
@@ -248,7 +254,7 @@ function App() {
       <footer className="site-footer">
         <div className="footer-main grid min-h-[75px] grid-cols-[1fr_1fr_auto] items-center gap-5 max-[700px]:grid-cols-[1fr_auto]">
           <BrandLockup compact />
-          <p>Complex problems,<br />packed down to everyday utilities.</p>
+          <p>Complex problems, pragmatic solutions</p>
           <a className="footer-top" href="#top">Back to the top <ArrowUpRight size={15} /></a>
         </div>
         <div className="footer-bottom"><span>© {new Date().getFullYear()} KITBAG LABS</span><span>INDEPENDENT VENTURE STUDIO <span className="footer-bottom__dot">●</span> BUILT FOR EVERYDAY</span></div>

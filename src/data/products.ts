@@ -19,10 +19,10 @@ export const products: Product[] = [
     name: "maphoist",
     category: "Local growth service",
     description: "Local visibility and customer acquisition management.",
-    note: "A new Kitbag Labs service, coming soon.",
+    note: "A new Kitbag Labs service.",
     glyph: "maphoist",
     accent: "#19ad98",
-    status: "Coming soon",
+    status: "Our latest effort",
   },
   {
     number: "02",
