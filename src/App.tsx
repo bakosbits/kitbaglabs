@@ -25,7 +25,7 @@ function BrandLockup({ compact = false }: { compact?: boolean }) {
       <img className="brand-mark" src="/kitbag-logo.svg" alt="" />
       <span className="brand-type">
         <span className="brand-name">kitbag<span>labs</span></span>
-        {!compact && <span className="brand-descriptor">Independent venture studio</span>}
+        {!compact && <span className="brand-descriptor">An independent venture studio</span>}
       </span>
     </a>
   );
@@ -248,7 +248,7 @@ function App() {
           <p>Complex problems, pragmatic solutions.</p>
           <a className="footer-top" href="#top">Back to the top <ArrowUpRight size={15} /></a>
         </div>
-        <div className="footer-bottom"><span>© {new Date().getFullYear()} KITBAG LABS</span><span>INDEPENDENT VENTURE STUDIO <span className="footer-bottom__dot">●</span> BUILT FOR EVERYDAY</span></div>
+        <div className="footer-bottom"><span>© {new Date().getFullYear()} KITBAG LABS</span><span>AN INDEPENDENT VENTURE STUDIO <span className="footer-bottom__dot">●</span> BUILT FOR EVERYDAY</span></div>
       </footer>
     </>
   );
