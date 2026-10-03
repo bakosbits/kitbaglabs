@@ -53,7 +53,6 @@ function RouteMap() {
         <img src="/kitbag-logo.svg" alt="" />
         <span>THE EVERYDAY, MADE EASIER</span>
       </div>
-      <div className="route-map__caption route-map__caption--bottom">OBSERVE <span>—</span> MAKE <span>—</span> REFINE</div>
     </div>
   );
 }
@@ -171,12 +170,9 @@ function App() {
             <p className="hero-lede">We deliver focused solutions that make everyday work, and everyday life, run a little smoother.</p>
             <div className="hero-actions">
               <a className="button button--primary" href="#products">Explore our products <ArrowRight size={17} /></a>
-              <a className="text-link" href="#studio">Meet the studio <ArrowDownRight size={17} /></a>
             </div>
-            <div className="hero-footnote"><span>INDEPENDENT BY DESIGN</span><span className="hero-footnote__line" /><span>USEFUL BY DEFAULT</span></div>
           </div>
           <div className="hero-visual"><RouteMap /></div>
-          <a className="hero-scroll" href="#studio" aria-label="Scroll to learn about the studio"><span>SCROLL TO EXPLORE</span><ArrowDownRight size={15} /></a>
         </section>
 
         <section className="studio-section section-wrap" id="studio" aria-labelledby="studio-title">
@@ -184,7 +180,6 @@ function App() {
           <div className="studio-layout">
             <div className="studio-heading">
               <h2 id="studio-title">We look for the<br />small things that<br /><em>slow us down.</em></h2>
-              <span className="hand-note"><span className="hand-note__arrow">↘</span> That’s where better tools begin.</span>
             </div>
             <div className="studio-copy">
               <p className="studio-copy__lead">Kitbag Labs is a modern venture studio for practical ideas with a job to do.</p>
@@ -231,7 +226,6 @@ function App() {
             <div className="product-list">
               {products.map((product) => <ProductCard key={product.number} product={product} />)}
             </div>
-            <div className="products-footer"><span>MORE USEFUL IDEAS, IN THE WORKS.</span><span className="products-footer__rule" /><span>CHECK BACK SOON <ArrowDownRight size={15} /></span></div>
           </div>
         </section>
 
@@ -251,7 +245,7 @@ function App() {
       <footer className="site-footer">
         <div className="footer-main">
           <BrandLockup compact />
-          <p>Complex problems,<br />packed down to everyday utilities.</p>
+          <p>Complex problems, pragmatic solutions.</p>
           <a className="footer-top" href="#top">Back to the top <ArrowUpRight size={15} /></a>
         </div>
         <div className="footer-bottom"><span>© {new Date().getFullYear()} KITBAG LABS</span><span>INDEPENDENT VENTURE STUDIO <span className="footer-bottom__dot">●</span> BUILT FOR EVERYDAY</span></div>
