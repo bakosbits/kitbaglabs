@@ -15,7 +15,7 @@ import { products, type Product, type ProductGlyph } from "./data/products";
 
 const navigation = [
   { label: "The studio", href: "#studio" },
-  { label: "Our products", href: "#products" },
+  { label: "Our kit", href: "#kit" },
   { label: "How we think", href: "#approach" },
 ];
 
@@ -169,7 +169,7 @@ function App() {
             <h1 id="hero-title">A little less<br /><span>“I wish this</span><br /><span>were easier.”</span></h1>
             <p className="hero-lede">We deliver focused solutions that make everyday work, and everyday life, run a little smoother.</p>
             <div className="hero-actions">
-              <a className="button button--primary" href="#products">Explore our products <ArrowRight size={17} /></a>
+              <a className="button button--primary" href="#kit">Explore our kit <ArrowRight size={17} /></a>
             </div>
           </div>
           <div className="hero-visual"><RouteMap /></div>
