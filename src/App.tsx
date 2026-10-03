@@ -191,7 +191,7 @@ function App() {
 
         <section className="approach-section section-wrap" id="approach" aria-labelledby="approach-title">
           <div className="approach-top">
-            <div className="section-marker"><span>02</span><span className="section-marker__line" /> OUR APPROACH</div>
+            <div className="section-marker approach-marker"><span>02</span><span className="section-marker__line" /> OUR APPROACH</div>
             <p>Not more software for software’s sake.<br />Just a better way through.</p>
           </div>
           <h2 id="approach-title" className="approach-title">A good solution makes<br />the <span>complicated</span> feel<br />like second nature.</h2>
@@ -231,7 +231,7 @@ function App() {
 
         <section className="contact-section section-wrap" id="contact" aria-labelledby="contact-title">
           <div className="contact-orbit" aria-hidden="true"><span /><span /><span /></div>
-          <div className="section-marker"><span>04</span><span className="section-marker__line" /> A GOOD PLACE TO START</div>
+          <div className="section-marker contact-marker"><span>04</span><span className="section-marker__line" /> A GOOD PLACE TO START</div>
           <div className="contact-content">
             <div>
               <h2 id="contact-title">Got a little<br />friction of your own?</h2>
