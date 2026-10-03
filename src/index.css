@@ -100,6 +100,7 @@ button { color: inherit; font: inherit; }
 .section-marker { display: flex; align-items: center; gap: 13px; color: #7a8294; }
 .section-marker > span:first-child { color: var(--teal-dark); font: 600 12px/1 var(--font-display); letter-spacing: 0; }
 .section-marker__line { width: 32px; height: 1px; background: var(--teal); }
+.approach-marker, .section-marker--light, .contact-section > .section-marker { margin-left: -5.2%; }
 .studio-layout { display: grid; grid-template-columns: 1.04fr .96fr; gap: 11%; margin: 76px 5.2% 0; }
 .studio-heading h2 { margin: 0; font: 600 clamp(2.8rem, 4.2vw, 4.5rem)/1.08 var(--font-display); letter-spacing: -.065em; }
 .studio-heading h2 em { color: var(--teal-dark); font-style: normal; }
@@ -220,7 +221,7 @@ button { color: inherit; font: inherit; }
   .hero { grid-template-columns: 1fr .82fr; min-height: 630px; }
   .hero-copy { padding-left: 0; }.hero h1 { font-size: clamp(3.5rem, 7vw, 5.4rem); }
   .route-chip { padding: 8px 9px; font-size: 8px; }.route-map__center { width: 122px; height: 122px; }.route-map__center img { width: 62px; height: 62px; }
-  .studio-layout { gap: 7%; margin-left: 0; margin-right: 0; }.approach-section { padding-left: 0; padding-right: 0; }
+  .studio-layout { gap: 7%; margin-left: 0; margin-right: 0; }.studio-section { padding-left: 0; padding-right: 0; }.approach-section { padding-left: 0; padding-right: 0; }
   .products-wrap { padding-left: 0; padding-right: 0; }
   .contact-section { padding-left: 0; padding-right: 0; }.contact-content { margin-left: 0; margin-right: 0; }
   .product-card { grid-template-columns: 6% minmax(0, 1fr) minmax(180px, 30%); gap: 16px; }
