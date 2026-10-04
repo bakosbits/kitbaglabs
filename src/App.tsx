@@ -238,8 +238,8 @@ function ProductCard({ product }: { product: Product }) {
 }
 
 const approachSteps = [
-  { index: "01 / NOTICE", title: "Start with the snag.", body: "Find the repeated chore, the scattered information, the decision that takes longer than it should." },
-  { index: "02 / FOCUS", title: "Keep the job clear.", body: "Strip away the noise. Use automation and AI where they make a real difference, not just a talking point." },
+  { index: "01 / NOTICE", title: "Start with the snag.", body: "Find the repeated chore, the scattered information, the task that takes longer than it should." },
+  { index: "02 / FOCUS", title: "Keep the job clear.", body: "Strip away the noise. Use automation and agentic AI where they make a real difference." },
   { index: "03 / MAKE", title: "Make it useful.", body: "Ship a small, thoughtful solution that fits naturally into the day and earns its place there." },
 ];
 
@@ -277,11 +277,11 @@ function App() {
       <main id="main">
         <Section labelledBy="hero-title" className="relative grid overflow-hidden pt-14 pb-18 md:min-h-160 md:grid-cols-5 md:items-center md:pt-16 md:pb-24 lg:min-h-175 lg:grid-cols-2">
           <div className="relative z-10 md:col-span-3 md:pt-6 lg:col-span-1 xl:pl-16">
-            <div className="mb-6 flex items-center gap-2 text-2xs font-bold tracking-widest text-slate-500 uppercase md:mb-7"><PulseDot /> DAILY FRICTIONS. SIMPLE SOLUTIONS.</div>
+            <div className="mb-6 flex items-center gap-2 text-2xs font-bold tracking-widest text-slate-500 uppercase md:mb-7"><PulseDot /> PRAGMATIC SOLUTIONS FOR DAILY FRICTIONS.</div>
             <h1 className={`${display} max-w-3xl text-5xl leading-none tracking-tighter sm:text-6xl lg:text-7xl 2xl:text-8xl`} id="hero-title">
-              A little less<br /><span className="text-slate-400">“I wish this</span><br /><span className="text-slate-400">were easier.”</span>
+              A little less<br /><span className="text-slate-400">friction</span><br /><span className="text-slate-400"></span>
             </h1>
-            <p className="mt-5 max-w-md text-sm leading-relaxed text-slate-600 md:mt-7 md:text-base">We develop solutions that make everyday work, and everyday life, run a little smoother.</p>
+            <p className="mt-5 max-w-md text-sm leading-relaxed text-slate-600 md:mt-7 md:text-base">We research and build solutions that make everyday work, and everyday life, run a little smoother.</p>
             <div className="mt-6 flex md:mt-8">
               <Button href="#kit">Explore our solutions <ArrowRight size={17} /></Button>
             </div>
@@ -308,7 +308,6 @@ function App() {
         <Section id="approach" labelledBy="approach-title" className="border-t border-line pt-6 pb-18 md:pb-28 xl:px-16">
           <div className="flex items-start justify-between">
             <SectionMarker number="02" label="OUR APPROACH" />
-            <p className="text-right text-2xs leading-relaxed text-slate-500 md:text-xs">Not more software for software’s sake.<br />Just a better way through.</p>
           </div>
           <h2 id="approach-title" className={`${display} mt-12 mb-10 text-4xl leading-none tracking-tighter sm:text-5xl md:mt-16 md:text-6xl md:mb-16 lg:text-7xl xl:text-8xl`}>
             The right solution makes{" "}<br className="hidden md:inline" />the <span className="text-teal-dark">complicated</span> feel{" "}<br className="hidden md:inline" />like second nature.
