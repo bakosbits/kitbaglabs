@@ -23,7 +23,7 @@
     @apply min-w-[320px];
   }
   ::selection {
-    @apply bg-teal/25 text-ink;
+    @apply bg-teal/25;
   }
   :focus-visible {
     @apply outline-3 outline-offset-4 outline-teal;
