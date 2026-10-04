@@ -286,14 +286,14 @@ function App() {
               <Button href="#kit">Explore our solutions <ArrowRight size={17} /></Button>
             </div>
           </div>
-          <div className="flex items-center justify-center pt-5 md:col-span-2 md:pt-0 lg:col-span-1"><RouteMap /></div>
+          <div className="hidden items-center justify-center md:col-span-2 md:flex lg:col-span-1"><RouteMap /></div>
         </Section>
 
         <Section id="studio" labelledBy="studio-title" className="border-t border-line pt-6 pb-18 md:pb-28">
           <SectionMarker number="01" label="THE STUDIO" />
           <div className="mt-12 grid md:mt-20 md:grid-cols-2 md:gap-12 lg:gap-16 xl:mx-16">
             <h2 className={`${display} text-4xl leading-none tracking-tighter sm:text-5xl xl:text-6xl`} id="studio-title">
-              We look for the<br />small things that<br /><em className="text-teal-dark not-italic">slow us down.</em>
+              We look for the{" "}<br className="hidden md:inline" />small things that{" "}<br className="hidden md:inline" /><em className="text-teal-dark not-italic">slow us down.</em>
             </h2>
             <div className="pt-9 text-sm leading-loose text-slate-600 md:pt-2">
               <p className="max-w-lg font-display text-lg leading-relaxed font-medium tracking-tight text-ink md:text-xl">Kitbag Labs is a modern venture studio for practical ideas with a job to do.</p>
@@ -310,8 +310,8 @@ function App() {
             <SectionMarker number="02" label="OUR APPROACH" />
             <p className="text-right text-2xs leading-relaxed text-slate-500 md:text-xs">Not more software for software’s sake.<br />Just a better way through.</p>
           </div>
-          <h2 id="approach-title" className={`${display} mt-12 mb-10 text-5xl leading-none tracking-tighter sm:text-6xl md:mt-16 md:mb-16 lg:text-7xl xl:text-8xl`}>
-            The right solution makes<br />the <span className="text-teal-dark">complicated</span> feel<br />like second nature.
+          <h2 id="approach-title" className={`${display} mt-12 mb-10 text-4xl leading-none tracking-tighter sm:text-5xl md:mt-16 md:text-6xl md:mb-16 lg:text-7xl xl:text-8xl`}>
+            The right solution makes{" "}<br className="hidden md:inline" />the <span className="text-teal-dark">complicated</span> feel{" "}<br className="hidden md:inline" />like second nature.
           </h2>
           <div className="grid border-t border-line md:grid-cols-3">
             {approachSteps.map((step, i) => (
@@ -328,8 +328,8 @@ function App() {
           <div className="mb-10 grid md:mb-16 md:grid-cols-3 md:items-end md:gap-12">
             <div className="md:col-span-2">
               <SectionMarker number="03" label="THE KITBAG" light />
-              <h2 id="products-title" className={`${display} mt-7 text-5xl leading-none tracking-tighter sm:text-6xl md:mt-9 xl:text-7xl`}>
-                Pragmatic solutions.<br /><span className="text-slate-300">Real momentum.</span>
+              <h2 id="products-title" className={`${display} mt-7 text-4xl leading-none tracking-tighter sm:text-5xl md:mt-9 md:text-6xl xl:text-7xl`}>
+                Pragmatic solutions.{" "}<br className="hidden md:inline" /><span className="text-slate-300">Real momentum.</span>
               </h2>
             </div>
             <p className="mt-5 max-w-sm text-xs leading-relaxed text-slate-300 md:mt-0 md:mb-2 md:text-sm">A growing collection of focused tools and services for choices to make, work to move, new possibilities to find, and local businesses to grow.</p>
@@ -348,7 +348,7 @@ function App() {
           <SectionMarker number="04" label="A GOOD PLACE TO START" />
           <div className="relative z-10 mt-12 flex flex-col md:mt-18 md:flex-row md:items-end md:justify-between md:gap-8">
             <div>
-              <h2 id="contact-title" className={`${display} text-5xl leading-none tracking-tighter sm:text-6xl xl:text-7xl`}>Got a little<br />friction of your own?</h2>
+              <h2 id="contact-title" className={`${display} text-4xl leading-none tracking-tighter sm:text-5xl md:text-6xl xl:text-7xl`}>Got a little{" "}<br className="hidden md:inline" />friction of your own?</h2>
               <p className="mt-5 max-w-xs text-xs leading-relaxed text-slate-500 md:max-w-none md:text-sm">We’re always curious about the everyday problems worth making easier.</p>
             </div>
             <Button large className="mt-7 self-start whitespace-nowrap md:mt-0 md:mb-2 md:self-auto" href="mailto:hello@kitbaglabs.com?subject=I%20have%20friction">Let’s talk about it <ArrowUpRight size={18} /></Button>
@@ -359,9 +359,9 @@ function App() {
       <footer className="bg-stone-200 px-5 pt-6 pb-4 md:px-7 lg:px-12 lg:pt-8 lg:pb-5">
         <div className="mx-auto max-w-340">
           <div className="grid min-h-19 grid-cols-2 items-center gap-5 md:grid-cols-3">
-            <BrandLockup compact />
-            <p className="row-start-2 text-xs leading-relaxed text-slate-500 md:row-start-1">Complex problems, pragmatic solutions</p>
-            <a className="col-start-2 row-span-2 inline-flex items-center gap-2 self-end text-2xs font-semibold text-slate-600 md:col-start-3 md:row-span-1 md:justify-self-end md:text-xs" href="#top">Back to the top <ArrowUpRight className="text-teal-dark" size={15} /></a>
+            <div className="col-start-1 justify-self-start"><BrandLockup compact /></div>
+            <p className="col-start-1 row-start-2 text-xs leading-relaxed text-slate-500 md:col-start-2 md:row-start-1 md:justify-self-center">Complex problems, pragmatic solutions</p>
+            <a className="col-start-2 row-span-2 inline-flex items-center gap-2 self-end text-2xs font-semibold text-slate-600 md:col-start-3 md:row-span-1 md:self-center md:justify-self-end md:text-xs" href="#top">Back to the top <ArrowUpRight className="text-teal-dark" size={15} /></a>
           </div>
           <div className="mt-4 flex flex-col items-start gap-2 border-t border-ink/10 pt-4 text-2xs font-bold tracking-widest text-slate-500 md:mt-6 md:flex-row md:justify-between md:gap-4">
             <span>© {new Date().getFullYear()} KITBAG LABS</span>
