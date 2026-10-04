@@ -42,7 +42,7 @@ button { color: inherit; font: inherit; }
 .skip-link:focus { transform: translateY(0); }
 :focus-visible { outline: 3px solid var(--teal); outline-offset: 4px; }
 
-.brand-mark { width: 48px; height: 48px; display: block; object-fit: contain; }
+.brand-mark { width: 54px; height: 54px; display: block; object-fit: contain; }
 .brand-type { display: flex; flex-direction: column; gap: 2px; }
 .brand-name { font: 700 20px/1 var(--font-display); letter-spacing: -0.065em; color: var(--ink); }
 .brand-name span { color: var(--teal-dark); }
@@ -193,7 +193,7 @@ button { color: inherit; font: inherit; }
 .button--dark:hover { background: var(--teal-dark); }
 
 .site-footer { padding: 31px max(48px, calc((100% - 1360px)/2)) 21px; background: #e9ebe5; }
-.brand-lockup--compact .brand-mark { width: 40px; height: 40px; }.brand-lockup--compact .brand-name { font-size: 18px; }
+.brand-lockup--compact .brand-mark { width: 48px; height: 48px; }.brand-lockup--compact .brand-name { font-size: 20px; }
 .footer-main > p { margin: 0; color: #6f7788; font-size: 11px; line-height: 1.65; }
 .footer-top { display: inline-flex; align-items: center; gap: 7px; color: #4c5670; font-size: 10px; font-weight: 600; }
 .footer-top svg { color: var(--teal-dark); }
@@ -213,7 +213,7 @@ button { color: inherit; font: inherit; }
 }
 
 @media (max-width: 700px) {
-  .brand-mark { width: 42px; height: 42px; }.brand-name { font-size: 18px; }.brand-descriptor { font-size: 8px; }
+  .brand-mark { width: 48px; height: 48px; }.brand-name { font-size: 20px; }.brand-descriptor { font-size: 10px; }
   .menu-toggle { cursor: pointer; }
   .mobile-nav-wrap svg { color: var(--teal-dark); }
   .hero { min-height: auto; padding-top: 55px; padding-bottom: 74px; }

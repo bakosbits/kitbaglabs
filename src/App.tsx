@@ -223,7 +223,7 @@ function App() {
           </div>
         </section>
 
-        <section className="products-section" id="products" aria-labelledby="products-title">
+        <section className="products-section" id="kit" aria-labelledby="products-title">
           <div className="products-wrap mx-auto w-[calc(100%_-_6rem)] max-w-[1360px] px-[5.2%] pt-[98px] pb-[38px] max-[1024px]:w-[calc(100%_-_3.5rem)] max-[1024px]:px-0 max-[700px]:w-[calc(100%_-_2.5rem)] max-[700px]:pt-[69px] max-[700px]:pb-[25px]">
             <div className="products-intro mb-[62px] grid grid-cols-[1fr_.47fr] items-end gap-[8%] max-[700px]:mb-[38px] max-[700px]:block">
               <div>
