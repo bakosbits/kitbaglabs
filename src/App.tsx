@@ -60,7 +60,7 @@ function Button({ href, large = false, className = "", children }: { href: strin
 function BrandLockup({ compact = false }: { compact?: boolean }) {
   return (
     <a className="inline-flex min-w-fit items-center gap-3" href="#top" aria-label="Kitbag Labs home">
-      <img className={`block object-contain ${compact ? "size-24" : "size-16 md:size-24"}`} src="/kitbag-logo.svg" alt="" />
+      <img className={`block object-contain ${compact ? "size-24" : "size-16 md:size-24"}`} src="/kitbag-logo.svg" alt="kitbag logo" />
       <span className="flex flex-col gap-0.25">
         <span className="font-display text-xl leading-none font-bold tracking-tighter text-ink">kitbag<span className="text-teal-dark">labs</span></span>
         {!compact && <span className="text-2xs font-medium tracking-widest text-slate-500 uppercase">An independent venture studio</span>}
@@ -243,7 +243,7 @@ const approachSteps = [
   { index: "03 / MAKE", title: "Make it useful.", body: "Ship a small, thoughtful solution that fits naturally into the day and earns its place there." },
 ];
 
-function App() {
+export function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   function closeMenu() {
@@ -331,7 +331,6 @@ function App() {
                 Pragmatic solutions.{" "}<br className="hidden md:inline" /><span className="text-slate-300">Real momentum.</span>
               </h2>
             </div>
-            <p className="mt-5 max-w-sm text-xs leading-relaxed text-slate-300 md:mt-0 md:mb-2 md:text-sm">A growing collection of focused tools and services for choices to make, work to move, new possibilities to find, and local businesses to grow.</p>
           </div>
           <div className="border-t border-white/20">
             {products.map((product) => <ProductCard key={product.number} product={product} />)}
@@ -359,7 +358,7 @@ function App() {
         <div className="mx-auto max-w-340">
           <div className="grid min-h-19 grid-cols-2 items-center gap-5 md:grid-cols-3">
             <div className="col-start-1 justify-self-start"><BrandLockup compact /></div>
-            <p className="col-start-1 row-start-2 text-xs leading-relaxed text-slate-500 md:col-start-2 md:row-start-1 md:justify-self-center">Complex problems, pragmatic solutions</p>
+            <p className="col-start-1 row-start-2 text-xs leading-relaxed text-slate-500 md:col-start-2 md:row-start-1 md:justify-self-center">Daily frictions squashed with pragmatic solutions</p>
             <a className="col-start-2 row-span-2 inline-flex items-center gap-2 self-end text-2xs font-semibold text-slate-600 md:col-start-3 md:row-span-1 md:self-center md:justify-self-end md:text-xs" href="#top">Back to the top <ArrowUpRight className="text-teal-dark" size={15} /></a>
           </div>
           <div className="mt-4 flex flex-col items-start gap-2 border-t border-ink/10 pt-4 text-2xs font-bold tracking-widest text-slate-500 md:mt-6 md:flex-row md:justify-between md:gap-4">
@@ -371,5 +370,3 @@ function App() {
     </>
   );
 }
-
-export default App;
