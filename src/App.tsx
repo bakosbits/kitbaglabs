@@ -60,7 +60,7 @@ function Button({ href, large = false, className = "", children }: { href: strin
 function BrandLockup({ compact = false }: { compact?: boolean }) {
   return (
     <a className="inline-flex min-w-fit items-center gap-3" href="#top" aria-label="Kitbag Labs home">
-      <img className={`block object-contain ${compact ? "size-20" : "size-14 md:size-20"}`} src="/kitbag-logo.svg" alt="" />
+      <img className={`block object-contain ${compact ? "size-24" : "size-16 md:size-24"}`} src="/kitbag-logo.svg" alt="" />
       <span className="flex flex-col gap-0.25">
         <span className="font-display text-xl leading-none font-bold tracking-tighter text-ink">kitbag<span className="text-teal-dark">labs</span></span>
         {!compact && <span className="text-2xs font-medium tracking-widest text-slate-500 uppercase">An independent venture studio</span>}
