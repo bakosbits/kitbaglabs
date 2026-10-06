@@ -80,7 +80,7 @@ function RouteChip({ position, icon, children }: { position: string; icon: React
 function RouteMap() {
   return (
     <div className="relative mx-auto aspect-7/6 w-full max-w-lg text-slate-300 lg:max-w-xl" aria-label="Kitbag Labs turns everyday friction into practical tools" role="img">
-      <div className="absolute top-3 left-8 z-10 flex items-center gap-2 text-2xs font-bold tracking-widest text-slate-500"><PulseDot /> BUILT FOR REAL LIFE</div>
+      <div className="absolute top-3 left-8 z-10 flex items-center gap-2 text-2xs font-bold tracking-widest text-slate-500"><PulseDot />FOR YOUR BUSY LIFE</div>
       <svg className="absolute top-[5%] left-[4%] h-11/12 w-11/12 overflow-visible" viewBox="0 0 580 480" fill="none" aria-hidden="true">
         <path d="M80 96C172 29 353 29 454 105C544 173 543 304 446 373C340 449 163 427 79 339C17 275 15 153 80 96Z" stroke="currentColor" strokeWidth="1.5" strokeDasharray="3 10" />
         <path d="M80 96C165 166 188 239 142 340M454 105C357 165 324 235 446 373M80 339C194 284 350 280 446 373M80 96C218 122 374 144 454 105" stroke="currentColor" strokeWidth="1.25" />
@@ -92,7 +92,7 @@ function RouteMap() {
         <circle cx="337" cy="277" r="5" fill="#182246" />
       </svg>
       <RouteChip position="top-1/5 right-2" icon={<Sparkles />}>AI, where it helps</RouteChip>
-      <RouteChip position="top-2/5 left-0 md:-left-3" icon={<ArrowDownRight />}>Fewer little frictions</RouteChip>
+      <RouteChip position="top-2/5 left-0 md:-left-3" icon={<ArrowDownRight />}>Less friction</RouteChip>
       <RouteChip position="right-0 bottom-1/5" icon={<FileText />}>Tools that do the work</RouteChip>
       <RouteChip position="bottom-1/6 left-1/6" icon={<ShoppingBag />}>Everyday utility</RouteChip>
       <div className="absolute top-1/2 left-1/2 z-10 flex size-32 -translate-1/2 flex-col items-center justify-center gap-2 rounded-full border border-ink/10 bg-white/90 px-3 text-center shadow-2xl shadow-ink/10 md:size-36 lg:size-40">
@@ -277,7 +277,7 @@ export function App() {
       <main id="main">
         <Section labelledBy="hero-title" className="relative grid overflow-hidden pt-14 pb-18 md:min-h-160 md:grid-cols-5 md:items-center md:pt-16 md:pb-24 lg:min-h-175 lg:grid-cols-2">
           <div className="relative z-10 md:col-span-3 md:pt-6 lg:col-span-1 xl:pl-16">
-            <div className="mb-6 flex items-center gap-2 text-2xs font-bold tracking-widest text-slate-500 uppercase md:mb-7"><PulseDot /> PRAGMATIC SOLUTIONS FOR DAILY FRICTIONS.</div>
+            <div className="mb-6 flex items-center gap-2 text-2xs font-bold tracking-widest text-slate-500 uppercase md:mb-7"><PulseDot /> PRAGMATIC SOLUTIONS FOR DAILY FRICTIONS</div>
             <h1 className={`${display} max-w-3xl text-5xl leading-none tracking-tighter sm:text-6xl lg:text-7xl 2xl:text-8xl`} id="hero-title">
               A little less<br /><span className="text-slate-400">friction</span><br /><span className="text-slate-400"></span>
             </h1>
