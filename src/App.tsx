@@ -243,7 +243,7 @@ const approachSteps = [
   { index: "03 / MAKE", title: "Make it useful.", body: "Ship a small, thoughtful solution that fits naturally into the day and earns its place there." },
 ];
 
-export function App() {
+export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   function closeMenu() {
