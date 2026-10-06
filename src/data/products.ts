@@ -22,7 +22,7 @@ export const products: Product[] = [
     note: "A Kitbag Labs service.",
     glyph: "maphoist",
     accent: "#19ad98",
-    status: "Our latest effort",
+    status: "Be found by more prospects",
   },
   {
     number: "02",

@@ -297,7 +297,7 @@ export default function App() {
             </h2>
             <div className="pt-9 text-sm leading-loose text-slate-600 md:pt-2">
               <p className="max-w-lg font-display text-lg leading-relaxed font-medium tracking-tight text-ink md:text-xl">Kitbag Labs is a modern venture studio for practical ideas with a job to do.</p>
-              <p className="max-w-lg">We spot everyday friction, then build hyper-focused solutions to remove it. Sometimes that means smarter workflows. Sometimes it means using AI to make a complicated task feel simple. Always, it means giving people a little more of their time back.</p>
+              <p className="max-w-lg">We spot the friction, then build hyper-focused solutions to remove it. Sometimes that means smarter workflows. Some times it's a service offering. Sometimes it means using AI to make a complicated task feel simple. Always, it means giving people a little more of their time back.</p>
               <div className="mt-8 flex flex-wrap items-center gap-3 text-2xs font-bold tracking-widest text-slate-500">
                 <span>FOR PEOPLE</span><span className="size-1 rounded-full bg-teal" /><span>FOR BUSINESS</span><span className="size-1 rounded-full bg-teal" /><span>FOR WHAT’S NEXT</span>
               </div>
