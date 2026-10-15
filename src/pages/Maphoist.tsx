@@ -1,7 +1,7 @@
 import { ArrowUpRight, Check } from "lucide-react";
 import Layout from "../components/Layout";
 import { PageIntro } from "../components/Page";
-import { Button, Section, SectionMarker, display } from "../components/ui";
+import { Button, Section, display } from "../components/ui";
 
 const included = [
     { title: "Profile optimization", body: "We complete and tune every field of your Google Business Profile so it accurately represents what you do." },
@@ -43,7 +43,6 @@ export default function Maphoist() {
             </PageIntro>
 
             <Section labelledBy="included-title" className="border-t border-line pt-6 pb-18 md:pb-28 xl:px-16">
-                <SectionMarker number="02" label="WHAT’S INCLUDED" />
                 <h2 id="included-title" className={`${display} mt-12 mb-10 text-3xl leading-none tracking-tighter sm:text-4xl md:mt-16 md:mb-16 md:text-5xl`}>Six things, handled every month.</h2>
                 <div className="grid border-t border-line md:grid-cols-3">
                     {included.map((item, i) => (
@@ -57,7 +56,6 @@ export default function Maphoist() {
             </Section>
 
             <Section id="pricing" labelledBy="pricing-title" outer="bg-ink text-white" className="pt-16 pb-16 md:pt-24 md:pb-24 xl:px-16">
-                <SectionMarker number="03" label="PRICING" light />
                 <h2 id="pricing-title" className={`${display} mt-7 mb-10 text-4xl leading-none tracking-tighter sm:text-5xl md:mt-9 md:mb-14 md:text-6xl`}>
                     Simple monthly pricing. <span className="text-slate-300">No surprises.</span>
                 </h2>

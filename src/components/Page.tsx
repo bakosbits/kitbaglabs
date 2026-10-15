@@ -1,11 +1,10 @@
 import type { ReactNode } from "react";
-import { Section, SectionMarker, display } from "./ui";
+import { Section, display } from "./ui";
 
 /* Standard page opener: numbered marker, large display title, optional lead paragraph. */
 export function PageIntro({ id, label, title, lead, centered = false, children }: { id: string; label: string; title: ReactNode; lead?: ReactNode; centered?: boolean; children?: ReactNode }) {
     return (
         <Section labelledBy={id} className="pt-6 pb-12 md:pt-7 md:pb-16 xl:px-16">
-            <div className={centered ? "flex justify-center" : ""}><SectionMarker number="01" label={label} /></div>
             <h1 id={id} className={`${display} mt-12 max-w-4xl ${centered ? "mx-auto text-center" : ""} text-4xl leading-none tracking-tighter sm:text-5xl md:mt-16 md:text-6xl xl:text-7xl`}>{title}</h1>
             {lead && <p className={`mt-6 max-w-xl ${centered ? "mx-auto text-center" : ""} text-sm leading-relaxed text-slate-600 md:mt-8 md:text-base`}>{lead}</p>}
             {children}

@@ -1,6 +1,6 @@
 import Layout from "../components/Layout";
 import { PageIntro } from "../components/Page";
-import { Button, Section, SectionMarker, display } from "../components/ui";
+import { Button, Section, display } from "../components/ui";
 import { ArrowUpRight } from "lucide-react";
 
 const principles = [
@@ -20,7 +20,6 @@ export default function About() {
             />
 
             <Section labelledBy="principles-title" className="border-t border-line pt-6 pb-18 md:pb-28 xl:px-16">
-                <SectionMarker number="02" label="WHAT WE BELIEVE" />
                 <h2 id="principles-title" className={`${display} mt-12 mb-10 text-3xl leading-none tracking-tighter sm:text-4xl md:mt-16 md:mb-16 md:text-5xl`}>A kit of tools, each with a job to do.</h2>
                 <div className="grid border-t border-line md:grid-cols-3">
                     {principles.map((item, i) => (
@@ -34,9 +33,8 @@ export default function About() {
             </Section>
 
             <Section labelledBy="about-cta-title" className="border-t border-line pt-6 pb-18 md:pb-26 xl:px-16">
-                <SectionMarker number="03" label="SAY HELLO" />
                 <div className="mt-12 flex flex-col md:mt-16 md:flex-row md:items-end md:justify-between md:gap-8">
-                    <h2 id="about-cta-title" className={`${display} text-4xl leading-none tracking-tighter sm:text-5xl md:text-6xl`}>Got a little{" "}<br className="hidden md:inline" />friction of your own?</h2>
+                    <h2 id="about-cta-title" className={`${display} text-4xl leading-none tracking-tighter sm:text-5xl md:text-6xl`}>Something slowing you down?</h2>
                     <Button large className="mt-7 self-start whitespace-nowrap md:mt-0 md:mb-2 md:self-auto" href="/contact">Let’s talk about it <ArrowUpRight size={18} /></Button>
                 </div>
             </Section>

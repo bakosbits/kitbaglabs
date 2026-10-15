@@ -9,7 +9,7 @@ import {
     TrendingUp,
 } from "lucide-react";
 import { products, type Product, type ProductGlyph } from "../data/products";
-import { Button, PulseDot, Section, SectionMarker, display } from "../components/ui";
+import { Button, PulseDot, Section, display } from "../components/ui";
 
 function RouteChip({ position, icon, children }: { position: string; icon: React.ReactNode; children: React.ReactNode }) {
     return (
@@ -200,7 +200,6 @@ export default function Home() {
                 </Section>
 
                 <Section id="studio" labelledBy="studio-title" className="border-t border-line pt-6 pb-18 md:pb-28">
-                    <SectionMarker number="01" label="THE STUDIO" />
                     <div className="mt-12 grid md:mt-20 md:grid-cols-2 md:gap-12 lg:gap-16 xl:mx-16">
                         <h2 className={`${display} text-4xl leading-none tracking-tighter sm:text-5xl xl:text-6xl`} id="studio-title">
                             We look for the{" "}<br className="hidden md:inline" />small things that{" "}<br className="hidden md:inline" /><em className="text-teal-dark not-italic">slow us down.</em>
@@ -216,9 +215,6 @@ export default function Home() {
                 </Section>
 
                 <Section id="approach" labelledBy="approach-title" className="border-t border-line pt-6 pb-18 md:pb-28 xl:px-16">
-                    <div className="flex items-start justify-between">
-                        <SectionMarker number="02" label="OUR APPROACH" />
-                    </div>
                     <h2 id="approach-title" className={`${display} mt-12 mb-10 text-4xl leading-none tracking-tighter sm:text-5xl md:mt-16 md:text-6xl md:mb-16 lg:text-7xl xl:text-8xl`}>
                         The right solution makes{" "}<br className="hidden md:inline" />the <span className="text-teal-dark">complicated</span> feel{" "}<br className="hidden md:inline" />like second nature.
                     </h2>
@@ -236,7 +232,6 @@ export default function Home() {
                 <Section id="kit" labelledBy="products-title" outer="overflow-hidden bg-ink text-white" className="pt-16 pb-6 md:pt-24 md:pb-10 xl:px-16">
                     <div className="mb-10 grid md:mb-16 md:grid-cols-3 md:items-end md:gap-12">
                         <div className="md:col-span-2">
-                            <SectionMarker number="03" label="THE KITBAG" light />
                             <h2 id="products-title" className={`${display} mt-7 text-4xl leading-none tracking-tighter sm:text-5xl md:mt-9 md:text-6xl xl:text-7xl`}>
                                 Pragmatic solutions.{" "}<br className="hidden md:inline" /><span className="text-slate-300">Real momentum.</span>
                             </h2>
@@ -253,10 +248,9 @@ export default function Home() {
                         <span className="absolute right-13 bottom-20 z-10 size-1.5 rounded-full bg-teal" />
                         <span className="absolute top-43 left-22 z-10 size-1 rounded-full bg-ink" />
                     </div>
-                    <SectionMarker number="04" label="A GOOD PLACE TO START" />
                     <div className="relative z-10 mt-12 flex flex-col md:mt-18 md:flex-row md:items-end md:justify-between md:gap-8">
                         <div>
-                            <h2 id="contact-title" className={`${display} text-4xl leading-none tracking-tighter sm:text-5xl md:text-6xl xl:text-7xl`}>Got a little{" "}<br className="hidden md:inline" />friction of your own?</h2>
+                            <h2 id="contact-title" className={`${display} text-4xl leading-none tracking-tighter sm:text-5xl md:text-6xl xl:text-7xl`}>Something slowing you down?</h2>
                             <p className="mt-5 max-w-xs text-xs leading-relaxed text-slate-500 md:max-w-none md:text-sm">We’re always curious about the everyday problems worth making easier.</p>
                         </div>
                         <Button large className="mt-7 self-start whitespace-nowrap md:mt-0 md:mb-2 md:self-auto" href="/contact">Let’s talk about it <ArrowUpRight size={18} /></Button>

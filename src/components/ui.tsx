@@ -17,16 +17,6 @@ export function PulseDot() {
     );
 }
 
-export function SectionMarker({ number, label, light = false }: { number: string; label: string; light?: boolean }) {
-    return (
-        <div className={`flex items-center gap-2 text-2xs font-bold tracking-widest uppercase md:gap-3 ${light ? "text-slate-300" : "text-slate-500"}`}>
-            <span className={`font-display text-xs font-semibold tracking-normal ${light ? "text-slate-300" : "text-slate-500"}`}>{number}</span>
-            <span className="h-px w-5 bg-teal md:w-8" />
-            {label}
-        </div>
-    );
-}
-
 export function Button({ href, large = false, className = "", children }: { href: string; large?: boolean; className?: string; children: ReactNode }) {
     return (
         <a
