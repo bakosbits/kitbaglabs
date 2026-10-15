@@ -62,7 +62,7 @@ function BrandLockup() {
         <a className="inline-flex min-w-fit items-center gap-2" href="/" aria-label="Kitbag Labs home">
             <img className="block object-contain size-16 md:size-24" src="/kitbag-logo.svg" alt="kitbag logo" />
             <span className="flex flex-col gap-0.25">
-                <span className="font-display text-xl leading-none font-bold tracking-tighter text-ink">kitbag{" "}<span className="text-teal-dark">labs</span></span>
+                <span className="font-display text-2xl leading-none font-bold tracking-tighter text-ink">kitbag{" "}<span className="text-teal-dark">labs</span></span>
             </span>
         </a>
     );
@@ -359,13 +359,13 @@ export default function App() {
                         <div className="justify-self-start">
                             <BrandLockup/>
                         </div>
-                        <nav className="col-start-2 justify-self-end flex flex-wrap items-center gap-4 font-bold text-sm text-slate-600 md:gap-6">
-                            <a href="/about" className="hover:text-teal-dark transition-colors">Aboput</a>
+                        <nav className="col-start-2 justify-self-end flex flex-wrap items-center gap-4 font-medium text-sm md:gap-6">
+                            <a href="/about" className="hover:text-teal-dark transition-colors">About</a>
                             <a href="/terms" className="hover:text-teal-dark transition-colors">Terms</a>
                             <a href="/privacy" className="hover:text-teal-dark transition-colors">Privacy</a>
                         </nav>
                     </div>
-                    <div className="mt-4 flex flex-col items-start gap-2 border-t border-ink/10 pt-4 text-2xs font-bold tracking-widest text-slate-500 md:flex-row md:justify-between md:gap-4">
+                    <div className="flex flex-col items-start gap-2 border-t border-ink/10 pt-4 text-2xs font-bold tracking-widest text-slate-500 md:flex-row md:justify-between md:gap-4">
                         <span>© {new Date().getFullYear()} KITBAG LABS</span>
                         <span>AN INDEPENDENT VENTURE STUDIO</span>
                     </div>
