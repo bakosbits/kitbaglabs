@@ -358,12 +358,13 @@ export default function App() {
                         </div>
                         <nav className="col-start-2 justify-self-end flex flex-wrap items-center gap-4 font-medium text-sm md:gap-6">
                             <a href="/about" className="hover:text-teal-dark transition-colors">About</a>
+                            <a href="/contact" className="hover:text-teal-dark transition-colors">Contact</a>                            
                             <a href="/terms" className="hover:text-teal-dark transition-colors">Terms</a>
                             <a href="/privacy" className="hover:text-teal-dark transition-colors">Privacy</a>
                         </nav>
                     </div>
                     <div className="flex flex-col items-start gap-2 border-t border-ink/10 pt-4 text-2xs font-bold tracking-widest text-slate-500 md:flex-row md:justify-between md:gap-4">
-                        <span>© {new Date().getFullYear()} KITBAG LABS</span>
+                        <span>© {new Date().getFullYear()} KITBAG LABS. ALL RIGHTS RESERVED</span>
                         <span>AN INDEPENDENT VENTURE STUDIO</span>
                     </div>
                 </div>
