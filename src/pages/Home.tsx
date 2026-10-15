@@ -216,7 +216,7 @@ export default function Home() {
 
                 <Section id="approach" labelledBy="approach-title" className="border-t border-line pt-6 pb-18 md:pb-28 xl:px-16">
                     <h2 id="approach-title" className={`${display} mt-12 mb-10 text-4xl leading-none tracking-tighter sm:text-5xl md:mt-16 md:text-6xl md:mb-16 lg:text-7xl xl:text-8xl`}>
-                        The right solution makes{" "}<br className="hidden md:inline" />the <span className="text-teal-dark">complicated</span> feel{" "}<br className="hidden md:inline" />like second nature.
+                        The right solution makes{" "}<br className="hidden md:inline" /><span className="text-teal-dark">every day{" "}</span> feel easier.
                     </h2>
                     <div className="grid border-t border-line md:grid-cols-3">
                         {approachSteps.map((step, i) => (
