@@ -360,13 +360,13 @@ export default function App() {
                         <div className="justify-self-start">
                             <BrandLockup compact />
                         </div>
-                        <nav className="col-start-2 justify-self-end flex flex-wrap items-center gap-4 font-bold text-slate-600 md:gap-6">
-                            <a href="/about" className="hover:text-teal-dark transition-colors">ABOUT</a>
-                            <a href="/terms" className="hover:text-teal-dark transition-colors">TERMS</a>
-                            <a href="/privacy" className="hover:text-teal-dark transition-colors">PRIVACY</a>
+                        <nav className="col-start-2 justify-self-end flex flex-wrap items-center gap-4 font-bold text-sm text-slate-600 md:gap-6">
+                            <a href="/about" className="hover:text-teal-dark transition-colors">Aboput</a>
+                            <a href="/terms" className="hover:text-teal-dark transition-colors">Terms</a>
+                            <a href="/privacy" className="hover:text-teal-dark transition-colors">Privacy</a>
                         </nav>
                     </div>
-                    <div className="mt-4 flex flex-col items-start gap-2 border-t border-ink/10 pt-4 text-2xs font-bold tracking-widest text-slate-500 md:mt-6 md:flex-row md:justify-between md:gap-4">
+                    <div className="mt-4 flex flex-col items-start gap-2 border-t border-ink/10 pt-4 text-2xs font-bold tracking-widest text-slate-500 md:flex-row md:justify-between md:gap-4">
                         <span>© {new Date().getFullYear()} KITBAG LABS</span>
                         <span>AN INDEPENDENT VENTURE STUDIO</span>
                     </div>
