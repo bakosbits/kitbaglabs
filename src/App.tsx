@@ -57,13 +57,12 @@ function Button({ href, large = false, className = "", children }: { href: strin
     );
 }
 
-function BrandLockup({ compact = false }: { compact?: boolean }) {
+function BrandLockup() {
     return (
-        <a className="inline-flex min-w-fit items-center gap-2" href="#top" aria-label="Kitbag Labs home">
-            <img className={`block object-contain ${compact ? "size-24" : "size-16 md:size-24"}`} src="/kitbag-logo.svg" alt="kitbag logo" />
+        <a className="inline-flex min-w-fit items-center gap-2" href="/" aria-label="Kitbag Labs home">
+            <img className="block object-contain size-16 md:size-24" src="/kitbag-logo.svg" alt="kitbag logo" />
             <span className="flex flex-col gap-0.25">
                 <span className="font-display text-xl leading-none font-bold tracking-tighter text-ink">kitbag{" "}<span className="text-teal-dark">labs</span></span>
-                {!compact && <span className="text-2xs font-medium tracking-widest text-slate-500 uppercase">An independent venture studio</span>}
             </span>
         </a>
     );
@@ -358,7 +357,7 @@ export default function App() {
                 <div className="mx-auto max-w-340">
                     <div className="grid grid-cols-2 items-center gap-5 md:grid-cols-2">
                         <div className="justify-self-start">
-                            <BrandLockup compact />
+                            <BrandLockup/>
                         </div>
                         <nav className="col-start-2 justify-self-end flex flex-wrap items-center gap-4 font-bold text-sm text-slate-600 md:gap-6">
                             <a href="/about" className="hover:text-teal-dark transition-colors">Aboput</a>
