@@ -80,7 +80,7 @@ export default function Maphoist() {
             <Section labelledBy="maphoist-cta-title" className="pt-16 pb-18 md:pt-24 md:pb-26 xl:px-16">
                 <div className="flex flex-col md:flex-row md:items-end md:justify-between md:gap-8">
                     <div>
-                        <h2 id="maphoist-cta-title" className={`${display} text-4xl leading-none tracking-tighter sm:text-5xl md:text-6xl`}>Ready to be{" "}<br className="hidden md:inline" />found?</h2>
+                        <h2 id="maphoist-cta-title" className={`${display} text-4xl leading-none tracking-tighter sm:text-5xl md:text-6xl`}>Ready to be found?</h2>
                         <p className="mt-5 max-w-xs text-xs leading-relaxed text-slate-500 md:max-w-none md:text-sm">Tell us about your business and we’ll take it from there.</p>
                     </div>
                     <Button large className="mt-7 self-start whitespace-nowrap md:mt-0 md:mb-2 md:self-auto" href="/contact?subject=Tell%20me%20more%20about%20%22maphoist%22">Get started <ArrowUpRight size={18} /></Button>
