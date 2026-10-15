@@ -209,7 +209,7 @@ function ProductCard({ product }: { product: Product }) {
                     <div>
                         <span className="text-2xs font-bold tracking-widest text-slate-300 uppercase">{product.category}</span>
                         <h3 className={`${display} mt-2 text-4xl leading-none tracking-tighter text-white lg:text-5xl`}>{product.name}<span className="text-teal">.</span></h3>
-                        <p className="mt-2 text-xs tracking-wide text-slate-400">{product.domain ?? product.status}</p>
+                        <p className="mt-2 text-xs tracking-wide text-slate-400">{product.note}</p>
                     </div>
                     <a
                         className="grid size-8 shrink-0 place-items-center rounded-full border border-white/40 text-white transition duration-200 hover:translate-x-0.5 hover:-translate-y-0.5 hover:border-teal hover:bg-teal hover:text-ink md:size-9"
@@ -221,13 +221,10 @@ function ProductCard({ product }: { product: Product }) {
                     </a>
                 </div>
                 <p className="mt-3 mb-4 max-w-lg text-xs leading-relaxed text-slate-300 md:mt-4">{product.description}</p>
-                <div className="flex max-w-xl flex-col items-start gap-2 text-2xs text-slate-400 md:flex-row md:items-center md:justify-between md:gap-4">
-                    <span className="italic">{product.note}</span>
-                    <a className="group inline-flex items-center gap-1.5 font-semibold whitespace-nowrap text-slate-200" href={href} {...external}>
-                        {product.href ? "Explore product" : `Ask about ${product.name}`}
-                        <ArrowRight className="transition-transform group-hover:translate-x-1" size={15} />
-                    </a>
-                </div>
+                <a className="group inline-flex items-center gap-1.5 font-semibold whitespace-nowrap text-slate-200" href={href} {...external}>
+                    {product.href ? `Explore ${product.name}` : `Ask about ${product.name}`}
+                    <ArrowRight className="transition-transform group-hover:translate-x-1" size={15} />
+                </a>
             </div>
             <div className="relative col-span-11 col-start-2 h-32 min-w-0 overflow-hidden border border-white/10 bg-white/5 md:col-span-4 md:col-start-auto md:h-42">
                 <ProductArtwork glyph={product.glyph} accent={product.accent} />
@@ -357,7 +354,7 @@ export default function App() {
                 <div className="mx-auto max-w-340">
                     <div className="grid grid-cols-2 items-center gap-5 md:grid-cols-2">
                         <div className="justify-self-start">
-                            <BrandLockup/>
+                            <BrandLockup />
                         </div>
                         <nav className="col-start-2 justify-self-end flex flex-wrap items-center gap-4 font-medium text-sm md:gap-6">
                             <a href="/about" className="hover:text-teal-dark transition-colors">About</a>
