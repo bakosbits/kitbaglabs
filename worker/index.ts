@@ -67,7 +67,7 @@ async function handleContact(request: Request, env: Env): Promise<Response> {
         email_to: env.CONTACT_TO,
         email_from: env.CONTACT_FROM,
         replyTo: email,
-        subject: `[Kitbag Labs] ${subject}`,
+        subject: `[Kitbag Labs Website] ${subject}`,
         textBody: `Name: ${name}\nEmail: ${email}\nPhone: ${phone || "(not provided)"}\nSubject: ${subject}\n\n${message}\n`,
         htmlBody: `<p><strong>Name:</strong> ${escapeHtml(name)}<br><strong>Email:</strong> ${escapeHtml(email)}<br><strong>Phone:</strong> ${escapeHtml(phone || "(not provided)")}<br><strong>Subject:</strong> ${escapeHtml(subject)}</p><p>${escapeHtml(message).replace(/\n/g, "<br>")}</p>`,
     });

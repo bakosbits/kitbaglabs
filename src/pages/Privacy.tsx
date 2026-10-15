@@ -15,7 +15,7 @@ const sections = [
 export default function Privacy() {
     return (
         <Layout>
-            <PageIntro id="privacy-title" label="PRIVACY" title={<>Your <span className="text-teal-dark">privacy,</span> respected.</>} lead="What we collect, why we collect it, and what we do with it." />
+            <PageIntro centered id="privacy-title" label="PRIVACY" title={<>Your <span className="text-teal-dark">privacy,</span> respected.</>} lead="What we collect, why we collect it, and what we do with it." />
             <LegalSections updated="October 15, 2026" sections={sections} />
         </Layout>
     );

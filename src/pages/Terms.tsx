@@ -16,7 +16,7 @@ const sections = [
 export default function Terms() {
     return (
         <Layout>
-            <PageIntro id="terms-title" label="TERMS" title={<>Terms of <span className="text-teal-dark">service.</span></>} lead="The ground rules for using our site and services, in plain language." />
+            <PageIntro centered id="terms-title" label="TERMS" title={<>Terms of <span className="text-teal-dark">service.</span></>} lead="The ground rules for using our site and services, in plain language." />
             <LegalSections updated="October 15, 2026" sections={sections} />
         </Layout>
     );

@@ -39,15 +39,15 @@ export default function Contact() {
 
     return (
         <Layout>
-            <PageIntro id="contact-page-title" label="CONTACT" title={<>Got a little <span className="text-teal-dark">friction</span> of your own?</>} lead="Tell us what’s slowing you down, or ask about one of our products. We read everything." />
+            <PageIntro centered id="contact-page-title" label="CONTACT" title={<>Got a little <span className="text-teal-dark">friction</span> of your own?</>} lead="Tell us what’s slowing you down, or ask about one of our products. We read everything." />
             <Section className="border-t border-line pt-8 pb-18 md:pb-28 xl:px-16">
                 {status === "sent" ? (
-                    <div className="max-w-xl" role="status">
+                    <div className="mx-auto max-w-xl text-center" role="status">
                         <p className="font-display text-2xl font-semibold tracking-tight">Thanks, message sent.</p>
                         <p className="mt-3 text-sm leading-relaxed text-slate-600">We’ll get back to you soon.</p>
                     </div>
                 ) : (
-                    <form className="grid max-w-xl gap-6" onSubmit={onSubmit}>
+                    <form className="mx-auto grid max-w-xl gap-6" onSubmit={onSubmit}>
                         <label className="block">
                             <span className={label}>Name</span>
                             <input className={field} name="name" type="text" autoComplete="name" required maxLength={100} />
@@ -73,7 +73,7 @@ export default function Contact() {
                         {/* Honeypot: hidden from people, tempting to bots. */}
                         <input className="hidden" name="website" type="text" tabIndex={-1} autoComplete="off" aria-hidden="true" />
                         {status === "error" && <p className="text-sm font-medium text-red-700" role="alert">{error}</p>}
-                        <button className="inline-flex min-h-12 cursor-pointer items-center justify-center gap-3 self-start rounded-sm bg-ink px-5 text-xs font-bold tracking-wide text-white transition duration-200 hover:-translate-y-0.5 hover:bg-teal-dark disabled:cursor-wait disabled:opacity-60 md:min-h-13" type="submit" disabled={status === "sending"}>
+                        <button className="inline-flex min-h-12 cursor-pointer items-center justify-center gap-3 justify-self-center rounded-sm bg-ink px-5 text-xs font-bold tracking-wide text-white transition duration-200 hover:-translate-y-0.5 hover:bg-teal-dark disabled:cursor-wait disabled:opacity-60 md:min-h-13" type="submit" disabled={status === "sending"}>
                             {status === "sending" ? "Sending…" : "Send message"} <ArrowUpRight size={17} />
                         </button>
                     </form>

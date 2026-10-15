@@ -4,7 +4,7 @@ import { PageIntro } from "../components/Page";
 import { Button, Section, SectionMarker, display } from "../components/ui";
 
 const included = [
-    { title: "Profile optimization", body: "We complete and tune every field of your Google Business Profile so it accurately and compellingly represents what you do." },
+    { title: "Profile optimization", body: "We complete and tune every field of your Google Business Profile so it accurately represents what you do." },
     { title: "Category optimization", body: "The right primary and secondary categories decide which searches you show up for. We choose and maintain them." },
     { title: "Weekly posts", body: "Fresh, relevant posts every week keep your profile active and give prospects a reason to call." },
     { title: "Review responses", body: "Every review gets a timely, professional reply, good or bad, in your voice." },
