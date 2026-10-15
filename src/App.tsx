@@ -354,7 +354,7 @@ export default function App() {
                 </Section>
             </main>
 
-            <footer className="bg-stone-200 px-5 pt-6 pb-4 md:px-7 lg:px-12 lg:pt-8 lg:pb-5">
+            <footer className="bg-stone-200 px-5 pt-6 pb-4">
                 <div className="mx-auto max-w-340">
                     <div className="grid grid-cols-2 items-center gap-5 md:grid-cols-2">
                         <div className="justify-self-start">
