@@ -2,6 +2,10 @@ name = "kitbaglabs"
 main = "worker/index.ts"
 compatibility_date = "2025-01-01"
 
+# Build the site before every deploy (local or Cloudflare git builds) so dist/ always exists.
+[build]
+command = "npm run build"
+
 [assets]
 directory = "dist"
 binding = "ASSETS"
