@@ -31,3 +31,4 @@ export function LegalSections({ updated, sections }: { updated: string; sections
         </Section>
     );
 }
+
