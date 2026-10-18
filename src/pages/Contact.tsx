@@ -39,7 +39,7 @@ export default function Contact() {
 
     return (
         <Layout>
-            <PageIntro centered id="contact-page-title" label="CONTACT" title={<>How can we <span className="text-teal-dark">help</span>?</>} lead="Tell us what’s slowing you down, or ask about one of our products." />
+            <PageIntro centered id="contact-page-title" label="CONTACT" title={<>How can <span className="text-teal-dark">we{" "}</span>help?</>} lead="Tell us what’s slowing you down, or ask about one of our products." />
             <Section className="border-t border-line pt-8 pb-18 md:pb-28 xl:px-16">
                 {status === "sent" ? (
                     <div className="mx-auto max-w-xl text-center" role="status">
