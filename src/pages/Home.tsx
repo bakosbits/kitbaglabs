@@ -191,7 +191,7 @@ export default function Home() {
                         <h1 className={`${display} max-w-3xl text-5xl leading-none tracking-tighter sm:text-6xl lg:text-7xl 2xl:text-8xl`} id="hero-title">
                             A little less<br /><span className="text-slate-400">friction</span><br /><span className="text-slate-400"></span>
                         </h1>
-                        <p className="mt-5 max-w-md text-sm leading-relaxed text-slate-600 md:mt-7 md:text-base">We research and build solutions that make everyday work, and everyday life, run a little smoother.</p>
+                        <p className="mt-5 max-w-md text-sm leading-relaxed text-slate-600 md:mt-7 md:text-base">We deliver solutions that make everyday work, and everyday life, run a little smoother.</p>
                         <div className="mt-6 flex md:mt-8">
                             <Button href="#kit">Explore our solutions <ArrowRight size={17} /></Button>
                         </div>

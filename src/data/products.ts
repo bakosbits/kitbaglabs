@@ -18,7 +18,7 @@ export const products: Product[] = [
     category: "Local growth service",
     description: "Local visibility and customer acquisition management.",
     note: "Be found by more prospects.",
-    href: "/maphoist",
+    href: "https://maphoist.com",
     glyph: "maphoist",
     accent: "#19ad98",
   },
