@@ -22,7 +22,7 @@ function RouteChip({ position, icon, children }: { position: string; icon: React
 function RouteMap() {
     return (
         <div className="relative mx-auto aspect-7/6 w-full max-w-lg text-slate-300 lg:max-w-xl" aria-label="Kitbag Labs turns everyday friction into practical tools" role="img">
-            <div className="absolute top-3 left-8 z-10 flex items-center gap-2 text-2xs font-bold tracking-widest text-slate-500"><PulseDot />MAZIMIZE YOUR POTENTIAL</div>
+            <div className="absolute top-3 left-8 z-10 flex items-center gap-2 text-2xs font-bold tracking-widest text-slate-500"><PulseDot />MAZIMIZE YOUR GROWTH POTENTIAL</div>
             <svg className="absolute top-[5%] left-[4%] h-11/12 w-11/12 overflow-visible" viewBox="0 0 580 480" fill="none" aria-hidden="true">
                 <path d="M80 96C172 29 353 29 454 105C544 173 543 304 446 373C340 449 163 427 79 339C17 275 15 153 80 96Z" stroke="currentColor" strokeWidth="1.5" strokeDasharray="3 10" />
                 <path d="M80 96C165 166 188 239 142 340M454 105C357 165 324 235 446 373M80 339C194 284 350 280 446 373M80 96C218 122 374 144 454 105" stroke="currentColor" strokeWidth="1.25" />
@@ -201,18 +201,18 @@ export default function Home() {
                 <Section id="studio" labelledBy="studio-title" className="border-t border-line pt-6 pb-18 md:pb-28">
                     <div className="mt-12 grid md:mt-20 md:grid-cols-2 md:gap-12 lg:gap-16 xl:mx-16">
                         <h2 className={`${display} text-4xl leading-none tracking-tighter sm:text-5xl xl:text-6xl`} id="studio-title">
-                            We identify the{" "}<br className="hidden md:inline" /><em className="text-teal-dark not-italic">friction.</em>
+                            We identify the{" "}<br className="hidden md:inline" /><em className="text-teal-dark not-italic">friction</em>
                         </h2>
                         <div className="pt-9 text-sm leading-loose text-slate-600 md:pt-2">
                             <p className="max-w-lg font-display text-lg leading-relaxed font-medium tracking-tight text-ink md:text-xl">Kitbag Labs is a modern venture studio for practical ideas with a job to do.</p>
-                            <p className="max-w-lg">We spot the friction, then build focused solutions to remove it. Our solutions are designed to tackle operational mis-alignment or missing workflows. They focus on eliminating roadblocks in a way that optimizes your time.</p>
+                            <p className="max-w-lg mt-2">We spot the friction, then build focused solutions to remove it. Our tools are designed to tackle operational mis-alignment or missing workflows. They focus on eliminating roadblocks in a way that optimizes your time.</p>
                         </div>
                     </div>
                 </Section>
 
                 <Section id="approach" labelledBy="approach-title" className="border-t border-line pt-6 pb-18 md:pb-28 xl:px-16">
                     <h2 id="approach-title" className={`${display} mt-12 mb-10 text-4xl leading-none tracking-tighter sm:text-5xl md:mt-16 md:text-6xl md:mb-16 lg:text-7xl xl:text-8xl`}>
-                        Solutions that{" "}<br className="hidden md:inline" /><span className="text-teal-dark">accelerate{" "}</span> your growth potential.
+                        Tools that{" "}<span className="text-teal-dark">accelerate{" "}</span><br className="hidden md:inline" /> your growth potential
                     </h2>
                     <div className="grid border-t border-line md:grid-cols-3">
                         {approachSteps.map((step, i) => (
@@ -229,7 +229,7 @@ export default function Home() {
                     <div className="mb-10 grid md:mb-16 md:grid-cols-3 md:items-end md:gap-12">
                         <div className="md:col-span-2">
                             <h2 id="products-title" className={`${display} mt-7 text-4xl leading-none tracking-tighter sm:text-5xl md:mt-9 md:text-6xl xl:text-7xl`}>
-                                Pragmatic solutions.{" "}<br className="hidden md:inline" /><span className="text-slate-300">Real momentum.</span>
+                                Pragmatic solutions{" "}<br className="hidden md:inline" /><span className="text-slate-300">Real momentum</span>
                             </h2>
                         </div>
                     </div>
