@@ -22,7 +22,7 @@ function RouteChip({ position, icon, children }: { position: string; icon: React
 function RouteMap() {
     return (
         <div className="relative mx-auto aspect-7/6 w-full max-w-lg text-slate-300 lg:max-w-xl" aria-label="Kitbag Labs turns everyday friction into practical tools" role="img">
-            <div className="absolute top-3 left-8 z-10 flex items-center gap-2 text-2xs font-bold tracking-widest text-slate-500"><PulseDot />FOR YOUR BUSY LIFE</div>
+            <div className="absolute top-3 left-8 z-10 flex items-center gap-2 text-2xs font-bold tracking-widest text-slate-500"><PulseDot />MAZIMIZE YOUR POTENTIAL</div>
             <svg className="absolute top-[5%] left-[4%] h-11/12 w-11/12 overflow-visible" viewBox="0 0 580 480" fill="none" aria-hidden="true">
                 <path d="M80 96C172 29 353 29 454 105C544 173 543 304 446 373C340 449 163 427 79 339C17 275 15 153 80 96Z" stroke="currentColor" strokeWidth="1.5" strokeDasharray="3 10" />
                 <path d="M80 96C165 166 188 239 142 340M454 105C357 165 324 235 446 373M80 339C194 284 350 280 446 373M80 96C218 122 374 144 454 105" stroke="currentColor" strokeWidth="1.25" />
@@ -33,13 +33,12 @@ function RouteMap() {
                 <circle cx="446" cy="373" r="7" fill="#19ad98" />
                 <circle cx="337" cy="277" r="5" fill="#182246" />
             </svg>
-            <RouteChip position="top-1/5 right-2" icon={<Sparkles />}>AI, where it helps</RouteChip>
-            <RouteChip position="top-2/5 left-0 md:-left-3" icon={<ArrowDownRight />}>Less friction</RouteChip>
-            <RouteChip position="right-0 bottom-1/5" icon={<FileText />}>Tools that do the work</RouteChip>
+            <RouteChip position="top-1/5 right-2" icon={<Sparkles />}>Improve workflows</RouteChip>
+            <RouteChip position="top-2/5 left-0 md:-left-3" icon={<ArrowDownRight />}>Tools that do the work</RouteChip>
+            <RouteChip position="right-0 bottom-1/5" icon={<FileText />}>Less friction</RouteChip>
             <RouteChip position="bottom-1/6 left-1/6" icon={<ShoppingBag />}>Everyday utility</RouteChip>
             <div className="absolute top-1/2 left-1/2 z-10 flex size-32 -translate-1/2 flex-col items-center justify-center gap-2 rounded-full border border-ink/10 bg-white/90 px-3 text-center shadow-2xl shadow-ink/10 md:size-36 lg:size-40">
                 <img className="size-12 object-contain md:size-16 lg:size-20" src="/kitbag-logo.svg" alt="" />
-                <span className="text-2xs font-bold tracking-widest text-slate-500">THE EVERYDAY, MADE EASIER</span>
             </div>
         </div>
     );
@@ -202,7 +201,7 @@ export default function Home() {
                 <Section id="studio" labelledBy="studio-title" className="border-t border-line pt-6 pb-18 md:pb-28">
                     <div className="mt-12 grid md:mt-20 md:grid-cols-2 md:gap-12 lg:gap-16 xl:mx-16">
                         <h2 className={`${display} text-4xl leading-none tracking-tighter sm:text-5xl xl:text-6xl`} id="studio-title">
-                            We look for the{" "}<br className="hidden md:inline" />roadblocks that slow{" "}<br className="hidden md:inline" /><em className="text-teal-dark not-italic">your growth.</em>
+                            We identify the{" "}<br className="hidden md:inline" /><em className="text-teal-dark not-italic">friction.</em>
                         </h2>
                         <div className="pt-9 text-sm leading-loose text-slate-600 md:pt-2">
                             <p className="max-w-lg font-display text-lg leading-relaxed font-medium tracking-tight text-ink md:text-xl">Kitbag Labs is a modern venture studio for practical ideas with a job to do.</p>
@@ -213,7 +212,7 @@ export default function Home() {
 
                 <Section id="approach" labelledBy="approach-title" className="border-t border-line pt-6 pb-18 md:pb-28 xl:px-16">
                     <h2 id="approach-title" className={`${display} mt-12 mb-10 text-4xl leading-none tracking-tighter sm:text-5xl md:mt-16 md:text-6xl md:mb-16 lg:text-7xl xl:text-8xl`}>
-                        The right solution{" "}<br className="hidden md:inline" /><span className="text-teal-dark">accelerates{" "}</span> your growth potential.
+                        Solutions that{" "}<br className="hidden md:inline" /><span className="text-teal-dark">accelerate{" "}</span> your growth potential.
                     </h2>
                     <div className="grid border-t border-line md:grid-cols-3">
                         {approachSteps.map((step, i) => (
