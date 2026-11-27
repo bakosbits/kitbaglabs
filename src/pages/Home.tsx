@@ -205,7 +205,7 @@ export default function Home() {
                     </h2>
                     <div className="pt-9 text-sm leading-loose text-slate-600 md:pt-0">
                         <p className="max-w-lg font-display text-lg leading-relaxed font-medium tracking-tight text-ink md:text-xl">Kitbag Labs is a modern venture studio for practical ideas with a job to do.</p>
-                        <p className="max-w-lg mt-2">We spot the friction, then build focused solutions to remove it. Our tools are designed to tackle operational mis-alignment or missing workflows. They focus on eliminating roadblocks in a way that optimizes your time.</p>
+                        <p className="max-w-lg mt-2">We spot the friction, then build focused solutions to remove it. Our tools are designed to tackle operational mis-alignment or missing workflows. They focus on eliminating roadblocks in a way that optimizes your time so you can tackle what's important, growing your business.</p>
                     </div>
                 </div>
             </Section>
