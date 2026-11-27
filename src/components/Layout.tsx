@@ -6,7 +6,6 @@ import { BrandLockup } from "./ui";
 const navigation = [
     { label: "The studio", href: "#studio" },
     { label: "Our kit", href: "#kit" },
-    { label: "How we think", href: "#approach" },
 ];
 
 function Header({ home }: { home: boolean }) {

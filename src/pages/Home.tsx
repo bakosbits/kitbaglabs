@@ -33,12 +33,12 @@ function RouteMap() {
                 <circle cx="446" cy="373" r="7" fill="#19ad98" />
                 <circle cx="337" cy="277" r="5" fill="#182246" />
             </svg>
-            <RouteChip position="top-1/5 right-2" icon={<Sparkles />}>Improve workflows</RouteChip>
-            <RouteChip position="top-2/5 left-0 md:-left-3" icon={<ArrowDownRight />}>Tools that do the work</RouteChip>
+            <RouteChip position="top-2/6 right-2" icon={<Sparkles />}>Improve workflows</RouteChip>
+            <RouteChip position="top-2/5 left-0 md:-left-3" icon={<ArrowDownRight />}>Tools that work with you</RouteChip>
             <RouteChip position="right-0 bottom-1/5" icon={<FileText />}>Less friction</RouteChip>
             <RouteChip position="bottom-1/6 left-1/6" icon={<ShoppingBag />}>Everyday utility</RouteChip>
             <div className="absolute top-1/2 left-1/2 z-10 flex size-32 -translate-1/2 flex-col items-center justify-center gap-2 rounded-full border border-ink/10 bg-white/90 px-3 text-center shadow-2xl shadow-ink/10 md:size-36 lg:size-40">
-                <img className="size-12 object-contain md:size-16 lg:size-20" src="/kitbag-logo.svg" alt="" />
+                <img className="size-12 object-contain md:size-20 lg:size-24" src="/kitbag-logo.svg" alt="" />
             </div>
         </div>
     );
@@ -78,22 +78,6 @@ function ProductArtwork({ glyph, accent }: { glyph: ProductGlyph; accent: string
         );
     }
 
-    if (glyph === "documents") {
-        return (
-            <ArtFrame accent={accent} glow={glow}>
-                <div className={`absolute top-6 left-1/2 -ml-9 h-27 w-22 rotate-10 border bg-ink-soft px-3.5 pt-7 opacity-75 ${accentRing}`}>
-                    <DocLine className="w-full bg-white/35" /><DocLine className="w-full bg-white/35" /><DocLine className="w-full bg-white/35" />
-                </div>
-                <div className="absolute top-7 left-1/2 -ml-15 h-27 w-22 -rotate-8 border border-white/70 bg-paper px-3.5 pt-7 shadow-xl shadow-black/20">
-                    <span className={`absolute -top-3 left-3 grid size-7 place-items-center text-ink ${accentBg}`}><FileText size={17} /></span>
-                    <DocLine className="w-full bg-slate-300" /><DocLine className="w-3/4 bg-slate-300" /><DocLine className="w-5/6 bg-slate-300" />
-                    <span className={`mt-3 block h-1 w-5 ${accentBg}`} />
-                </div>
-                <span className={`absolute top-16 left-1/2 z-10 ml-11 grid size-7 place-items-center rounded-full border-2 border-ink-soft text-xs font-bold text-ink ${accentBg}`}>✓</span>
-            </ArtFrame>
-        );
-    }
-
     if (glyph === "discovery") {
         return (
             <ArtFrame accent={accent} glow={glow}>
@@ -107,6 +91,22 @@ function ProductArtwork({ glyph, accent }: { glyph: ProductGlyph; accent: string
                 </div>
                 <div className={`absolute top-1/2 left-1/2 size-36 -translate-1/2 rounded-full border ${accentRing}`} />
                 <div className={`absolute top-1/2 left-1/2 size-24 -translate-1/2 rounded-full border border-dashed ${accentRing}`} />
+            </ArtFrame>
+        );
+    }
+
+    if (glyph === "documents") {
+        return (
+            <ArtFrame accent={accent} glow={glow}>
+                <div className={`absolute top-6 left-1/2 -ml-9 h-27 w-22 rotate-10 border bg-ink-soft px-3.5 pt-7 opacity-75 ${accentRing}`}>
+                    <DocLine className="w-full bg-white/35" /><DocLine className="w-full bg-white/35" /><DocLine className="w-full bg-white/35" />
+                </div>
+                <div className="absolute top-7 left-1/2 -ml-15 h-27 w-22 -rotate-8 border border-white/70 bg-paper px-3.5 pt-7 shadow-xl shadow-black/20">
+                    <span className={`absolute -top-3 left-3 grid size-7 place-items-center text-ink ${accentBg}`}><FileText size={17} /></span>
+                    <DocLine className="w-full bg-slate-300" /><DocLine className="w-3/4 bg-slate-300" /><DocLine className="w-5/6 bg-slate-300" />
+                    <span className={`mt-3 block h-1 w-5 ${accentBg}`} />
+                </div>
+                <span className={`absolute top-16 left-1/2 z-10 ml-11 grid size-7 place-items-center rounded-full border-2 border-ink-soft text-xs font-bold text-ink ${accentBg}`}>✓</span>
             </ArtFrame>
         );
     }
@@ -150,7 +150,7 @@ function ProductCard({ product }: { product: Product }) {
                 <div className="flex items-center justify-between gap-3">
                     <div>
                         <span className="text-2xs font-bold tracking-widest text-slate-300 uppercase">{product.category}</span>
-                        <h3 className={`${display} mt-2 text-4xl leading-none tracking-tighter text-white lg:text-5xl`}>{product.name}<span className="text-teal">.</span></h3>
+                        <h3 className={`${display} mt-2 text-4xl leading-none tracking-tighter text-white lg:text-5xl`}></h3>
                         <p className="mt-2 text-xs tracking-wide text-slate-400">{product.note}</p>
                     </div>
                     <a
@@ -184,74 +184,74 @@ const approachSteps = [
 export default function Home() {
     return (
         <>
-                <Section labelledBy="hero-title" className="relative grid overflow-hidden pt-14 pb-18 md:min-h-160 md:grid-cols-5 md:items-center md:pt-16 md:pb-24 lg:min-h-175 lg:grid-cols-2">
-                    <div className="relative z-10 md:col-span-3 md:pt-6 lg:col-span-1 xl:pl-16">
-                        <div className="mb-6 flex items-center gap-2 text-2xs font-bold tracking-widest text-slate-500 uppercase md:mb-7"><PulseDot /> SCALE YOUR BUSINESS </div>
-                        <h1 className={`${display} max-w-3xl text-5xl leading-none tracking-tighter sm:text-6xl lg:text-7xl 2xl:text-8xl`} id="hero-title">
-                            Eliminate<br /><span className="text-slate-400">roadblocks</span><br /><span className="text-slate-400"></span>
-                        </h1>
-                        <p className="mt-5 max-w-md text-sm leading-relaxed text-slate-600 md:mt-7 md:text-base">We deliver solutions designed to eliminate roadblocks so you can focus on growth.</p>
-                        <div className="mt-6 flex md:mt-8">
-                            <Button href="#kit">Explore our solutions <ArrowRight size={17} /></Button>
-                        </div>
+            <Section labelledBy="hero-title" className="relative grid overflow-hidden pt-14 pb-18 md:min-h-160 md:grid-cols-5 md:items-center md:pt-16 md:pb-24 lg:min-h-175 lg:grid-cols-2">
+                <div className="relative z-10 md:col-span-3 md:pt-6 lg:col-span-1 xl:pl-16">
+                    <div className="mb-6 flex items-center gap-2 text-2xs font-bold tracking-widest text-slate-500 uppercase md:mb-7"><PulseDot />FOCUSED ON SCALABIITY</div>
+                    <h1 className={`${display} max-w-3xl text-5xl leading-none tracking-tighter sm:text-6xl lg:text-7xl 2xl:text-8xl`} id="hero-title">
+                        A pragmatic<br /><span className="text-teal-dark">approach</span>
+                    </h1>
+                    <p className="mt-5 max-w-md text-sm leading-relaxed text-slate-600 md:mt-7 md:text-base">We deliver solutions designed to eliminate roadblocks so you can focus on what's important, growing your business.</p>
+                    <div className="mt-6 flex md:mt-8">
+                        <Button href="#kit">Explore our solutions <ArrowRight size={17} /></Button>
                     </div>
-                    <div className="hidden items-center justify-center md:col-span-2 md:flex lg:col-span-1"><RouteMap /></div>
-                </Section>
+                </div>
+                <div className="hidden items-center justify-center md:col-span-2 md:flex lg:col-span-1"><RouteMap /></div>
+            </Section>
 
-                <Section id="studio" labelledBy="studio-title" className="border-t border-line pt-6 pb-18 md:pb-28">
-                    <div className="mt-12 grid md:mt-20 md:grid-cols-2 md:gap-12 lg:gap-16 xl:mx-16">
-                        <h2 className={`${display} text-4xl leading-none tracking-tighter sm:text-5xl xl:text-6xl`} id="studio-title">
-                            We identify the{" "}<br className="hidden md:inline" /><em className="text-teal-dark not-italic">friction</em>
-                        </h2>
-                        <div className="pt-9 text-sm leading-loose text-slate-600 md:pt-2">
-                            <p className="max-w-lg font-display text-lg leading-relaxed font-medium tracking-tight text-ink md:text-xl">Kitbag Labs is a modern venture studio for practical ideas with a job to do.</p>
-                            <p className="max-w-lg mt-2">We spot the friction, then build focused solutions to remove it. Our tools are designed to tackle operational mis-alignment or missing workflows. They focus on eliminating roadblocks in a way that optimizes your time.</p>
-                        </div>
-                    </div>
-                </Section>
-
-                <Section id="approach" labelledBy="approach-title" className="border-t border-line pt-6 pb-18 md:pb-28 xl:px-16">
-                    <h2 id="approach-title" className={`${display} mt-12 mb-10 text-4xl leading-none tracking-tighter sm:text-5xl md:mt-16 md:text-6xl md:mb-16 lg:text-7xl xl:text-8xl`}>
-                        Tools that{" "}<span className="text-teal-dark">accelerate{" "}</span><br className="hidden md:inline" /> your growth potential
+            <Section id="studio" labelledBy="studio-title" className="border-t border-line pt-6 pb-18 md:pb-28">
+                <div className="mt-12 grid md:mt-20 md:grid-cols-2 md:items-center md:gap-12 lg:gap-16 xl:mx-16">
+                    <h2 className={`${display} text-4xl leading-none tracking-tighter sm:text-5xl md:text-6xl xl:text-7xl`} id="studio-title">
+                        Removing{" "}<em className="text-teal-dark not-italic">friction</em>{" "}
                     </h2>
-                    <div className="grid border-t border-line md:grid-cols-3">
-                        {approachSteps.map((step, i) => (
-                            <article key={step.index} className={`border-b border-line py-5 md:border-b-0 md:pt-6 md:pr-8 md:pb-0${i > 0 ? " md:border-l md:pl-8" : ""}`}>
-                                <span className="text-2xs font-bold tracking-widest text-slate-500">{step.index}</span>
-                                <h3 className={`${display} mt-4 mb-2 text-lg leading-tight tracking-tight md:mt-7 md:mb-3 md:text-xl`}>{step.title}</h3>
-                                <p className="max-w-sm text-xs leading-relaxed text-slate-500 md:max-w-xs">{step.body}</p>
-                            </article>
-                        ))}
+                    <div className="pt-9 text-sm leading-loose text-slate-600 md:pt-0">
+                        <p className="max-w-lg font-display text-lg leading-relaxed font-medium tracking-tight text-ink md:text-xl">Kitbag Labs is a modern venture studio for practical ideas with a job to do.</p>
+                        <p className="max-w-lg mt-2">We spot the friction, then build focused solutions to remove it. Our tools are designed to tackle operational mis-alignment or missing workflows. They focus on eliminating roadblocks in a way that optimizes your time.</p>
                     </div>
-                </Section>
+                </div>
+            </Section>
 
-                <Section id="kit" labelledBy="products-title" outer="overflow-hidden bg-ink text-white" className="pt-16 pb-6 md:pt-24 md:pb-10 xl:px-16">
-                    <div className="mb-10 grid md:mb-16 md:grid-cols-3 md:items-end md:gap-12">
-                        <div className="md:col-span-2">
-                            <h2 id="products-title" className={`${display} mt-7 text-4xl leading-none tracking-tighter sm:text-5xl md:mt-9 md:text-6xl xl:text-7xl`}>
-                                Pragmatic solutions{" "}<br className="hidden md:inline" /><span className="text-slate-300">Real momentum</span>
-                            </h2>
-                        </div>
-                    </div>
-                    <div className="border-t border-white/20">
-                        {products.map((product) => <ProductCard key={product.number} product={product} />)}
-                    </div>
-                </Section>
+            <Section id="approach" labelledBy="approach-title" className="border-t border-line pt-6 pb-18 md:pb-28 xl:px-16">
+                <h2 id="approach-title" className={`${display} mt-12 mb-10 text-4xl leading-none tracking-tighter sm:text-5xl md:mt-16 md:text-6xl md:mb-16 xl:text-7xl`}>
+                    Solutions to{" "}<span className="text-teal-dark">help you{" "}</span>scale
+                </h2>
+                <div className="grid border-t border-line md:grid-cols-3">
+                    {approachSteps.map((step, i) => (
+                        <article key={step.index} className={`border-b border-line py-5 md:border-b-0 md:pt-6 md:pr-8 md:pb-0${i > 0 ? " md:border-l md:pl-8" : ""}`}>
+                            <span className="text-2xs font-bold tracking-widest text-slate-500">{step.index}</span>
+                            <h3 className={`${display} mt-4 mb-2 text-lg leading-tight tracking-tight md:mt-7 md:mb-3 md:text-xl`}>{step.title}</h3>
+                            <p className="max-w-sm text-xs leading-relaxed text-slate-500 md:max-w-xs">{step.body}</p>
+                        </article>
+                    ))}
+                </div>
+            </Section>
 
-                <Section id="contact" labelledBy="contact-title" className="relative overflow-hidden pt-6 pb-18 md:pt-7 md:pb-26 xl:px-16">
-                    <div className="absolute top-8 -right-20 size-52 rounded-full border border-teal/20 before:absolute before:inset-5 before:rounded-full before:border before:border-teal/20 after:absolute after:inset-10 after:rounded-full after:border after:border-teal/20 md:top-6 md:-right-26 md:size-72 md:before:inset-7 md:after:inset-15" aria-hidden="true">
-                        <span className="absolute top-11 left-13 z-10 size-2 rounded-full bg-teal" />
-                        <span className="absolute right-13 bottom-20 z-10 size-1.5 rounded-full bg-teal" />
-                        <span className="absolute top-43 left-22 z-10 size-1 rounded-full bg-ink" />
+            <Section id="kit" labelledBy="products-title" outer="overflow-hidden bg-ink text-white" className="pt-16 pb-6 md:pt-24 md:pb-10 xl:px-16">
+                <div className="mb-10 grid md:mb-16 md:grid-cols-3 md:items-end md:gap-12">
+                    <div className="md:col-span-2">
+                        <h2 id="products-title" className={`${display} mt-7 text-4xl leading-none tracking-tighter sm:text-5xl md:mt-9 md:text-6xl xl:text-7xl`}>
+                            Pragmatic solutions{" "}<br className="hidden md:inline" /><span className="text-slate-300">Real momentum</span>
+                        </h2>
                     </div>
-                    <div className="relative z-10 mt-12 flex flex-col md:mt-18 md:flex-row md:items-end md:justify-between md:gap-8">
-                        <div>
-                            <h2 id="contact-title" className={`${display} text-4xl leading-none tracking-tighter sm:text-5xl md:text-6xl xl:text-7xl`}>Something slowing you down?</h2>
-                            <p className="mt-5 max-w-xs text-xs leading-relaxed text-slate-500 md:max-w-none md:text-sm">We’re always curious about the roadblocks that are slowing your growth.</p>
-                        </div>
-                        <Button large className="mt-7 self-start whitespace-nowrap md:mt-0 md:mb-2 md:self-auto" href="/contact">Let’s talk about it <ArrowUpRight size={18} /></Button>
+                </div>
+                <div className="border-t border-white/20">
+                    {products.map((product) => <ProductCard key={product.number} product={product} />)}
+                </div>
+            </Section>
+
+            <Section id="contact" labelledBy="contact-title" className="relative overflow-hidden pt-6 pb-18 md:pt-7 md:pb-26 xl:px-16">
+                <div className="absolute top-8 -right-20 size-52 rounded-full border border-teal/20 before:absolute before:inset-5 before:rounded-full before:border before:border-teal/20 after:absolute after:inset-10 after:rounded-full after:border after:border-teal/20 md:top-6 md:-right-26 md:size-72 md:before:inset-7 md:after:inset-15" aria-hidden="true">
+                    <span className="absolute top-11 left-13 z-10 size-2 rounded-full bg-teal" />
+                    <span className="absolute right-13 bottom-20 z-10 size-1.5 rounded-full bg-teal" />
+                    <span className="absolute top-43 left-22 z-10 size-1 rounded-full bg-ink" />
+                </div>
+                <div className="relative z-10 mt-12 flex flex-col md:mt-18 md:flex-row md:items-end md:justify-between md:gap-8">
+                    <div>
+                        <h2 id="contact-title" className={`${display} text-4xl leading-none tracking-tighter sm:text-5xl md:text-6xl xl:text-7xl`}>Something slowing you down?</h2>
+                        <p className="mt-5 max-w-xs text-xs leading-relaxed text-slate-500 md:max-w-none md:text-sm">We’re always curious about the roadblocks that are slowing your growth.</p>
                     </div>
-                </Section>
+                    <Button large className="mt-7 self-start whitespace-nowrap md:mt-0 md:mb-2 md:self-auto" href="/contact">Let’s talk about it <ArrowUpRight size={18} /></Button>
+                </div>
+            </Section>
         </>
     );
 }
