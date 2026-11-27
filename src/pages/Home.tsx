@@ -186,7 +186,7 @@ export default function Home() {
         <>
             <Section labelledBy="hero-title" className="relative grid overflow-hidden pt-14 pb-18 md:min-h-160 md:grid-cols-5 md:items-center md:pt-16 md:pb-24 lg:min-h-175 lg:grid-cols-2">
                 <div className="relative z-10 md:col-span-3 md:pt-6 lg:col-span-1 xl:pl-16">
-                    <div className="mb-6 flex items-center gap-2 text-2xs font-bold tracking-widest text-slate-500 uppercase md:mb-7"><PulseDot />FOCUSED ON SCALABIITY</div>
+                    <div className="mb-6 flex items-center gap-2 text-2xs font-bold tracking-widest text-slate-500 uppercase md:mb-7"><PulseDot />SOLUTIONS TO HELP YOU SCALE</div>
                     <h1 className={`${display} max-w-3xl text-5xl leading-none tracking-tighter sm:text-6xl lg:text-7xl 2xl:text-8xl`} id="hero-title">
                         A pragmatic<br /><span className="text-teal-dark">approach</span>
                     </h1>
