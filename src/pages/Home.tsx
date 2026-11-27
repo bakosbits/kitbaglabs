@@ -187,11 +187,11 @@ export default function Home() {
         <>
                 <Section labelledBy="hero-title" className="relative grid overflow-hidden pt-14 pb-18 md:min-h-160 md:grid-cols-5 md:items-center md:pt-16 md:pb-24 lg:min-h-175 lg:grid-cols-2">
                     <div className="relative z-10 md:col-span-3 md:pt-6 lg:col-span-1 xl:pl-16">
-                        <div className="mb-6 flex items-center gap-2 text-2xs font-bold tracking-widest text-slate-500 uppercase md:mb-7"><PulseDot /> PRAGMATIC SOLUTIONS FOR DAILY FRICTIONS</div>
+                        <div className="mb-6 flex items-center gap-2 text-2xs font-bold tracking-widest text-slate-500 uppercase md:mb-7"><PulseDot /> SCALE YOUR BUSINESS </div>
                         <h1 className={`${display} max-w-3xl text-5xl leading-none tracking-tighter sm:text-6xl lg:text-7xl 2xl:text-8xl`} id="hero-title">
-                            A little less<br /><span className="text-slate-400">friction</span><br /><span className="text-slate-400"></span>
+                            Eliminate roadblocks and accelerate<br /><span className="text-slate-400">your growth</span><br /><span className="text-slate-400"></span>
                         </h1>
-                        <p className="mt-5 max-w-md text-sm leading-relaxed text-slate-600 md:mt-7 md:text-base">We deliver solutions that make everyday work, and everyday life, run a little smoother.</p>
+                        <p className="mt-5 max-w-md text-sm leading-relaxed text-slate-600 md:mt-7 md:text-base">We deliver solutions designed to eliminate roadblocks and accelerate growth.</p>
                         <div className="mt-6 flex md:mt-8">
                             <Button href="#kit">Explore our solutions <ArrowRight size={17} /></Button>
                         </div>
@@ -202,21 +202,18 @@ export default function Home() {
                 <Section id="studio" labelledBy="studio-title" className="border-t border-line pt-6 pb-18 md:pb-28">
                     <div className="mt-12 grid md:mt-20 md:grid-cols-2 md:gap-12 lg:gap-16 xl:mx-16">
                         <h2 className={`${display} text-4xl leading-none tracking-tighter sm:text-5xl xl:text-6xl`} id="studio-title">
-                            We look for the{" "}<br className="hidden md:inline" />small things that{" "}<br className="hidden md:inline" /><em className="text-teal-dark not-italic">slow us down.</em>
+                            We look for the{" "}<br className="hidden md:inline" />roadblocks that slow{" "}<br className="hidden md:inline" /><em className="text-teal-dark not-italic">your growth.</em>
                         </h2>
                         <div className="pt-9 text-sm leading-loose text-slate-600 md:pt-2">
                             <p className="max-w-lg font-display text-lg leading-relaxed font-medium tracking-tight text-ink md:text-xl">Kitbag Labs is a modern venture studio for practical ideas with a job to do.</p>
-                            <p className="max-w-lg">We spot the friction, then build hyper-focused solutions to remove it. Sometimes that means smarter workflows. Some times it's a service offering. Sometimes it means using AI to make a complicated task feel simple. Always, it means giving people a little more of their time back.</p>
-                            <div className="mt-8 flex flex-wrap items-center gap-3 text-2xs font-bold tracking-widest text-slate-500">
-                                <span>FOR PEOPLE</span><span className="size-1 rounded-full bg-teal" /><span>FOR BUSINESS</span><span className="size-1 rounded-full bg-teal" /><span>FOR WHAT’S NEXT</span>
-                            </div>
+                            <p className="max-w-lg">We spot the friction, then build focused solutions to remove it. Our solutions are designed to tackle operational mis-alignment or missing workflows. They focus on eliminating roadblocks in a way that optimizes your time.</p>
                         </div>
                     </div>
                 </Section>
 
                 <Section id="approach" labelledBy="approach-title" className="border-t border-line pt-6 pb-18 md:pb-28 xl:px-16">
                     <h2 id="approach-title" className={`${display} mt-12 mb-10 text-4xl leading-none tracking-tighter sm:text-5xl md:mt-16 md:text-6xl md:mb-16 lg:text-7xl xl:text-8xl`}>
-                        The right solution makes{" "}<br className="hidden md:inline" /><span className="text-teal-dark">every day{" "}</span> feel easier.
+                        The right solution{" "}<br className="hidden md:inline" /><span className="text-teal-dark">accelerates{" "}</span> your growth potential.
                     </h2>
                     <div className="grid border-t border-line md:grid-cols-3">
                         {approachSteps.map((step, i) => (
@@ -251,7 +248,7 @@ export default function Home() {
                     <div className="relative z-10 mt-12 flex flex-col md:mt-18 md:flex-row md:items-end md:justify-between md:gap-8">
                         <div>
                             <h2 id="contact-title" className={`${display} text-4xl leading-none tracking-tighter sm:text-5xl md:text-6xl xl:text-7xl`}>Something slowing you down?</h2>
-                            <p className="mt-5 max-w-xs text-xs leading-relaxed text-slate-500 md:max-w-none md:text-sm">We’re always curious about the everyday problems worth making easier.</p>
+                            <p className="mt-5 max-w-xs text-xs leading-relaxed text-slate-500 md:max-w-none md:text-sm">We’re always curious about the roadblocks that are slowing your growth.</p>
                         </div>
                         <Button large className="mt-7 self-start whitespace-nowrap md:mt-0 md:mb-2 md:self-auto" href="/contact">Let’s talk about it <ArrowUpRight size={18} /></Button>
                     </div>
