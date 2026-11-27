@@ -189,9 +189,9 @@ export default function Home() {
                     <div className="relative z-10 md:col-span-3 md:pt-6 lg:col-span-1 xl:pl-16">
                         <div className="mb-6 flex items-center gap-2 text-2xs font-bold tracking-widest text-slate-500 uppercase md:mb-7"><PulseDot /> SCALE YOUR BUSINESS </div>
                         <h1 className={`${display} max-w-3xl text-5xl leading-none tracking-tighter sm:text-6xl lg:text-7xl 2xl:text-8xl`} id="hero-title">
-                            Eliminate roadblocks and accelerate<br /><span className="text-slate-400">your growth</span><br /><span className="text-slate-400"></span>
+                            Eliminate<br /><span className="text-slate-400">roadblocks</span><br /><span className="text-slate-400"></span>
                         </h1>
-                        <p className="mt-5 max-w-md text-sm leading-relaxed text-slate-600 md:mt-7 md:text-base">We deliver solutions designed to eliminate roadblocks and accelerate growth.</p>
+                        <p className="mt-5 max-w-md text-sm leading-relaxed text-slate-600 md:mt-7 md:text-base">We deliver solutions designed to eliminate roadblocks so you can focus on growth.</p>
                         <div className="mt-6 flex md:mt-8">
                             <Button href="#kit">Explore our solutions <ArrowRight size={17} /></Button>
                         </div>
